@@ -4,7 +4,7 @@ import Slider from './Slider';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-200 bg-cover h-screen">
       <Slider />
     </div>
   );

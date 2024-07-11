@@ -27,7 +27,7 @@ const Slider = () => {
         setCurrentprofile ((prevprofile) => (prevprofile === 0 ? 1 : 0))
     };
     return(
-        <div className=" bg-gray-200 relative flex flex-col p-6 lg:flex-row-reverse lg:justify-center lg:0"> 
+        <div className=" relative flex flex-col p-6 lg:flex-row-reverse lg:justify-center lg:0"> 
             <div className=" relative ">
                 <div className=" flex justify-center items-center mt-8 lg:ml-48" >
                     < img className=" w-80" src={profile[currentprofile].image}  alt="Tanya"/>
@@ -41,7 +41,7 @@ const Slider = () => {
                 
             </div>
 
-            <div className="lg:w-1/3 lg:flex lg:flex-col lg:text-left lg:absolute lg: right-2/4 lg:mt-8 lg:p-6">
+            <div  className=" background lg:w-1/3 lg:flex lg:flex-col lg:text-left lg:absolute lg: right-2/4 lg:mt-8 lg:p-6">
                 <h3 className=" text-xl text-darkBlue mt-14">"{profile[currentprofile].description}"</h3>
                 <div className=" flex flex-col lg:flex-row lg:mt-4 lg:gap-1">
                     < h3 className=" text-darkBlue font-bold mt-4 lg:mt-0">{profile[currentprofile].name}</h3>
